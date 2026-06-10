@@ -73,7 +73,7 @@ export default function PMDashboard({ user }: Props) {
       <Onboarding
         userId={user.id}
         userEmail={user.email ?? ''}
-        propertyCount={properties.length}
+        properties={properties}
         onComplete={handleOnboardingComplete}
       />
     );
